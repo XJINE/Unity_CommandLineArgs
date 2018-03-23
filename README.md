@@ -20,22 +20,22 @@ These functions return success to get or not, and output the value to out~.
 ```
 int value;
 …
-CommandLineArgs.GetValueAsInt("paramName", out value);
-CommandLineArgs.GetValueAsFloat("paramName", out value);
-CommandLineArgs.GetValueAsString("paramName", out value);
+CommandLineArgs.GetValueAsInt("-ParamName", out value);
+CommandLineArgs.GetValueAsFloat("-ParamName", out value);
+CommandLineArgs.GetValueAsString("-ParamName", out value);
 
 int[] values;
 …
-CommandLineArgs.GetValuesAsInt("paramName", out values);
-CommandLineArgs.GetValuesAsFloat("paramName", out values);
-CommandLineArgs.GetValuesAsString("paramName", out values);
+CommandLineArgs.GetValuesAsInt("-ParamName", out values);
+CommandLineArgs.GetValuesAsFloat("-ParamName", out values);
+CommandLineArgs.GetValuesAsString("-ParamName", out values);
 ```
 
 Also you can check the parameter is defined or not.
-Following function simply returns the "paramName" is defined or not.
+Following function simply returns the `"-ParamName"` is defined or not.
 
 ```
-CommandLineArgs.HasParameter("paramName");
+CommandLineArgs.HasParameter("-ParamName");
 ```
 
 ### Naming Rule
