@@ -9,7 +9,7 @@ Get command line args more easily.
 If you want to import this repository as submodule in your project.
 
 ```
-git submodule add -b submodule https://github.com/XJINE/Unity_CommandLineArgs.git Assets/Packages/XJGUI
+git submodule add -b submodule https://github.com/XJINE/Unity_CommandLineArgs.git Assets/Packages/CommandLineArgs
 ```
 
 ### Get a Value
