@@ -50,7 +50,7 @@ And the values are must not be start with "-" and must not be include ",".
 (2) Array parameters should be define with ", ". Certainly, you can define array parameters with " ".
 However, if you have to deal single array parameters as array, you must use ", ".
 
-*EX: "-SampleParamsA 0 1 2 3 4 5" and "-SampleParamsB 0," are both deal as array.*
+*EX: Both of "-SampleParamsA 0 1 2 3 4 5" and "-SampleParamsB 0," are regarded as array.*
 
 ### Ex.
 
