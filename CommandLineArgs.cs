@@ -16,14 +16,14 @@ public static class CommandLineArgs
     static CommandLineArgs()
     {
         CommandLineArgsSet = new Dictionary<string, object>();
-        ConstructGetCommandLineArgs();
+        ConstructCommandLineArgs();
     }
 
     #endregion Constructor
 
     #region Method
 
-    private static void ConstructGetCommandLineArgs()
+    private static void ConstructCommandLineArgs()
     {
         int index = 0;
 
