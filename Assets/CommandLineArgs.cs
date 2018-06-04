@@ -16,14 +16,14 @@ public static class CommandLineArgs
     static CommandLineArgs()
     {
         CommandLineArgsSet = new Dictionary<string, object>();
-        ConstructGetCommandLineArgs();
+        ConstructCommandLineArgs();
     }
 
     #endregion Constructor
 
     #region Method
 
-    private static void ConstructGetCommandLineArgs()
+    private static void ConstructCommandLineArgs()
     {
         int index = 0;
 
@@ -186,6 +186,24 @@ public static class CommandLineArgs
         }
     }
 
+    public static bool GetValueAsBool(string paramName, out bool value) 
+    {
+        value = default(bool);
+
+        try
+        {
+            // NOTE:
+            // If the value is larger than 0, it becomes true.
+
+            value = int.Parse((string)CommandLineArgsSet[paramName]) > 0;
+            return true;
+        }
+        catch
+        {
+            return false;
+        }
+    }
+
     public static bool GetValuesAsInt(string paramName, out int[] values) 
     {
         values = null;
@@ -239,6 +257,29 @@ public static class CommandLineArgs
         try
         {
             values = (string[])CommandLineArgsSet[paramName];
+
+            return true;
+        }
+        catch
+        {
+            return false;
+        }
+    }
+
+    public static bool GetValuesAsBool(string paramName, out bool[] values)
+    {
+        values = null;
+
+        try
+        {
+            string[] valuesTemp = (string[])CommandLineArgsSet[paramName];
+
+            values = new bool[valuesTemp.Length];
+
+            for (int i = 0; i < valuesTemp.Length; i++)
+            {
+                values[i] = int.Parse(valuesTemp[i]) > 0;
+            }
 
             return true;
         }
