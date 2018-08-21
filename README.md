@@ -15,7 +15,7 @@ You can import this asset from UnityPackage.
 There are some functions to get command line args values.
 These functions return success to get or not, and output the value to out~.
 
-```
+```csharp
 int value;
 …
 CommandLineArgs.GetValueAsInt("-ParamName", out value);
@@ -32,7 +32,7 @@ CommandLineArgs.GetValuesAsString("-ParamName", out values);
 Also you can check the parameter is defined or not.
 Following function simply returns the `"-ParamName"` is defined or not.
 
-```
+```csharp
 CommandLineArgs.HasParameter("-ParamName");
 ```
 
