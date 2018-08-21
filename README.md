@@ -6,11 +6,9 @@ Get command line args more easily.
 
 ### Import to Your Project
 
-If you want to import this repository as submodule in your project.
+You can import this asset from UnityPackage.
 
-```
-git submodule add -b submodule https://github.com/XJINE/Unity_CommandLineArgs.git Assets/Packages/CommandLineArgs
-```
+- [CommandLineArgs.unitypackage](https://github.com/XJINE/Unity_CommandLineArgs/blob/master/CommandLineArgs.unitypackage)
 
 ### Get a Value
 
