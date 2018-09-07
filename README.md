@@ -2,13 +2,13 @@
 
 Get command line args more easily.
 
-## How to Use
-
-### Import to Your Project
+## Import to Your Project
 
 You can import this asset from UnityPackage.
 
 - [CommandLineArgs.unitypackage](https://github.com/XJINE/Unity_CommandLineArgs/blob/master/CommandLineArgs.unitypackage)
+
+## How to Use
 
 ### Get a Value
 
